@@ -3,6 +3,7 @@ import { Container } from "@mui/system";
 import DeleteIcon from "@mui/icons-material/Delete";
 import React from "react";
 import { data } from "../../../customData/data";
+import { useSelector } from "react-redux";
 
 // const useStyles = makeStyles((theme: Theme) =>
 //   createStyles({
@@ -17,6 +18,8 @@ import { data } from "../../../customData/data";
 // );
 
 export const ContactsReturn: React.FC = () => {
+  const state = useSelector((state) => state);
+  console.log("Stattteee - ", state);
   const contactsData = data.map((item) => {
     return (
       <Grid

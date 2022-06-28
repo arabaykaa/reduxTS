@@ -1,13 +1,14 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { cartReducer } from "./cart/cart.slice";
+import contactsReducer from "./cart/cart.slice";
+// import { cartSlice } from "./cart/cart.slice";
 
-const rootReducer = combineReducers({
-  toolkit: cartReducer,
-});
+// const rootReducer = combineReducers({
+//   toolkit: cartSlice.reducer,
+// });
 
 export const store = configureStore({
   reducer: {
-    contacts: rootReducer,
+    contacts: contactsReducer,
   },
 });
 
