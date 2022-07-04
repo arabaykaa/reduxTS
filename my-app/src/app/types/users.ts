@@ -4,3 +4,9 @@ export interface IContacts {
   // phone: string;
   // id: number;
 }
+
+export type Users = {
+  id: number;
+  name: string;
+  phone: string;
+};

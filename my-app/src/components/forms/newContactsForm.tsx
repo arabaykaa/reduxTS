@@ -85,6 +85,3 @@ export const NewContactsForm: React.FC = () => {
     </Container>
   );
 };
-// function addItem(namedata: string): any {
-//   throw new Error("Function not implemented.");
-// }
